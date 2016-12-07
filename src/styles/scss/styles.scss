@@ -1,0 +1,52 @@
+#item {
+	float: left;
+	font-family: Arial;
+	width: 75%;
+	height: 100%;
+	font-size: 1.2em;
+	line-height: 2.2;
+	text-align: center;
+	resize: none;
+}
+
+
+#item:focus {
+	outline-color: transparent;
+	outline-style: none;
+}
+
+#add:active {
+	background-color: darkgreen;
+}
+
+#add:focus {
+	outline-color: transparent;
+	outline-style: none;
+}
+
+#add {
+	background-color: limegreen;
+	height: 100%;
+	width: 25%;
+	border: none;
+}
+.wntb {
+	height: 50px;
+}
+
+body {
+	width: 200px;
+}
+
+.items {
+	font-family: Arial;
+	height: 50px;
+	font-size: 1.2em;
+	line-height: 2.2;
+	text-align: center;
+	resize: none;
+}
+
+.itemList {
+	width: 200px;
+}
