@@ -1,0 +1,86 @@
+body {
+  background-color: black;
+  color: gray; }
+
+.appWrapper {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.button {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  border: 1px solid transparent; }
+  .button--delete {
+    background-color: #99382f; }
+    .button--delete:active {
+      background-color: #4b1b17; }
+  .button--remove-one {
+    float: left;
+    margin-top: -3px; }
+  .button--reset {
+    position: absolute;
+    left: 0;
+    top: 210px;
+    margin: -35px 0 0 10px; }
+  .button--confirm {
+    background-color: #739e2f;
+    margin: 5px 0 0 -41px; }
+    .button--confirm:active {
+      background-color: #3a4f18; }
+  .button--completed {
+    float: right;
+    margin-top: -3px;
+    background-color: #bcbcbc;
+    border: 1px solid transparent;
+    transition: background .2s ease; }
+    .button--completed:active {
+      background-color: #666666; }
+    .button--completed.isActive {
+      background-color: #739e2f; }
+  .button:focus {
+    outline: transparent; }
+
+.foodIcon {
+  font-size: 10em;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.whatToBuy {
+  height: 40px; }
+
+.itemToAdd {
+  font-family: "Arial", "sans-serif";
+  text-align: center;
+  font-size: 1.2em;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  resize: none;
+  float: left;
+  border: 1px solid gray;
+  background-color: black;
+  color: #538c43; }
+  .itemToAdd:focus {
+    outline: transparent; }
+
+::-webkit-input-placeholder {
+  color: #538c43; }
+
+.listItem {
+  font-family: "Arial", "sans-serif";
+  text-align: center;
+  font-size: 1.2em;
+  padding: 10px;
+  margin: -1px;
+  resize: none;
+  border: 1px solid gray;
+  color: white; }
+
+.itemWrapper.toggleStrike {
+  text-decoration: line-through;
+  color: #4a4a4a; }

@@ -1,0 +1,28 @@
+.whatToBuy {
+	height: 40px;
+}
+
+.itemToAdd {
+	font-family: "Arial", "sans-serif";
+	text-align: center;
+	font-size: 1.2em;
+
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 10px;
+	resize: none;
+	float: left;
+
+	border: 1px solid $border;
+	background-color: $background;
+	color: $inputTextColor;
+
+	&:focus {
+		outline: transparent;
+	}
+}
+
+::-webkit-input-placeholder {
+	color: $inputTextColor;
+}

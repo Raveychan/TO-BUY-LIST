@@ -46,10 +46,10 @@ gulp.task('js', ['cleanJs'], function () {
 });
 
 gulp.task('scss', ['cleanScss'], function () {
-  return gulp.src(['src/styles/**/*.*'])
+  return gulp.src(['src/styles/scss/main.scss'])
     .pipe(plumber(handleError))
     .pipe(sass())
-    .pipe(concat('styles.css'))
+    .pipe(concat('main.css'))
     .pipe(gulp.dest('src/styles'))
     .pipe(browserSync.stream());
 });

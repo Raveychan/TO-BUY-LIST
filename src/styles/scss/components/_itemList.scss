@@ -1,0 +1,19 @@
+.listItem {
+	font-family: "Arial", "sans-serif";
+	text-align: center;
+	font-size: 1.2em;
+
+	padding: 10px;
+	margin: -1px;
+	resize: none;
+
+	border: 1px solid $border;
+	color: $primary;
+}
+
+.itemWrapper {
+	&.toggleStrike {
+		text-decoration: line-through;
+		color: #4a4a4a;
+	}
+}

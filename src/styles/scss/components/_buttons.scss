@@ -1,0 +1,57 @@
+.button {
+	height: 30px;
+	width: 30px;
+
+	border-radius: 20px;
+	border: 1px solid $buttonBorder;
+
+	&--delete {
+		background-color: $removeButton;
+
+		&:active {
+			background-color: darken($removeButton, 20%);
+		}
+	}
+
+	&--remove-one {
+		float: left;
+		margin-top: -3px;
+	}
+
+	&--reset {
+		position: absolute;
+		left: 0;
+		top: 210px;
+		margin: -35px 0 0 10px;
+	}
+
+	&--confirm {
+		background-color: $addButton;
+		margin: 5px 0 0 -41px;
+
+		&:active {
+			background-color: darken($addButton, 20%);
+		}
+	}
+
+	&--completed {
+		float: right;
+		margin-top: -3px;
+
+		background-color: $doneButton;
+		border: 1px solid $buttonBorder;
+		transition: background .2s ease;
+
+		&:active {
+			background-color: $doneButtonActive;
+		}
+
+		&.isActive {
+			background-color: $addButton;
+		}
+	}
+
+	&:focus {
+		outline:transparent;
+	}
+}

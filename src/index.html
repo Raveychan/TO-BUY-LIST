@@ -1,14 +1,19 @@
+<!DOCTYPE>
 <html>
 <head>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="itemList">
+<div class="appWrapper js-app">
+    <div class="foodIcon"><i class="fa fa-cutlery" aria-hidden="true"></i></div>
     <div class="whatToBuy">
         <input class="itemToAdd" placeholder="What to buy?" />
-        <button class="add">
-            <i class="fa fa-check" aria-hidden="true"></i>
+        <button class="button button--confirm js-app-add">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+        <button class="button button--delete button--reset js-app-remove">
+            <i class="fa fa-times" aria-hidden="true"></i>
         </button>
     </div>
 
