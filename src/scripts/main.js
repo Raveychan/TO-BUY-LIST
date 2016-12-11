@@ -5,25 +5,35 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
 function addBuy () {
 
-    document.getElementById("add").addEventListener("click", addItem);
+    document.querySelector(".add").addEventListener("click", addItem);
 
     function addItem() {
-        var item = $("input#item");
+        var item = $(".itemToAdd");
 
-        var $newItem = $("<div/>")
-            .addClass("items")
+        var $newItem = $("<div></div>")
+            .addClass("items");
+
+        var $p = $("<span></span>")
             .html(item.val());
 
+        var $bought = $("<button></button>")
+            .addClass("bought");
+
+        var $icon = $("<i></i>")
+            .addClass("fa fa-check")
+            .attr("aria-hidden", "true");
+
+        $newItem.append($p);
+        $bought.append($icon);
+        $newItem.append($bought);
         $(".itemList").append($newItem);
 
         item.val("");
-
     }
-    
 }
 
 $(document).ready(function () {
 
     addBuy();
-    
+
 });
