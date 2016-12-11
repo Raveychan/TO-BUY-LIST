@@ -49,7 +49,7 @@ function addBuy() {
 }
 
 function deleteAll() {
-    $(this).parent().parent().find(".items").remove();
+    $(this).parent().parent().find(".listItem").remove();
 }
 
 $(document).ready(function () {
